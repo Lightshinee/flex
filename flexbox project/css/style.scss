@@ -1,0 +1,137 @@
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Black.ttf) format("truetype");
+  src: url(../fonts/Poppins-Regular.ttf) format("truetype");
+  src: url(../fonts/Poppins-Bold.ttf) format("truetype");
+  src: url(../fonts/Poppins-Light.ttf) format("truetpe");
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: poppins;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: #a1c3ff;
+}
+
+img{
+  max-width: 100%;
+}
+
+h1,h2{
+  margin-bottom: 15px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.container{
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.nav-bar{
+  background: #3474e6;
+  color: #fff;
+  height: 60px;
+
+  .logo{
+    font-size: x-large;
+    font-weight: bold;
+  }
+  
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+    &:hover{
+      color: lightblue;
+    }
+  }
+  ul{
+    display: flex;
+    li{
+      margin-left: 20px;
+    }
+  }
+}
+
+header{
+  background-color: #0151cc;
+  color: #fff;
+  min-height: 400px;
+  align-items: center;
+
+  h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  img{
+    max-width: 300px;
+    margin-top: 50px;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.boxes{
+  .container{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.box{
+  flex: 1;
+  background-color: #0a51cc;
+  margin: 20px 10px;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+
+  img{
+    margin-right: 10px;
+  }
+
+}
+ 
+
+@media (max-width: 768px){
+  .header{
+    .container{
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+      img{
+        margin-bottom: 30px;
+      }
+    }
+  } 
+
+  .boxes{
+    .container{
+      display: block;
+      text-align: center;
+    }
+  }
+}
